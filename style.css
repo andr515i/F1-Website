@@ -2,3 +2,10 @@
     padding: 0;
     margin: 0;
 }
+
+.admin {
+    float: right;
+}
+.navbar-collapse {
+    flex-grow: 0;
+}
