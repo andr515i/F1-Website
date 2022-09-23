@@ -9,3 +9,27 @@
 .navbar-collapse {
     flex-grow: 0;
 }
+
+.wrapper {
+        text-align: center;
+        padding: 10px;
+}
+.login {
+    margin: 0.5em;
+}
+label {
+    background-color: #6c757d;
+    margin-right: 9em ;
+}
+.container {
+    grid-column: 2;
+}
+
+a.nav-link , a.nav-brand{
+    /*  background-color: black; */
+    margin-right: 2em;
+}
+
+.btn-wrapper {
+    text-align: center;
+}

@@ -22,29 +22,28 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="Videoes.html">Videoes</a>
-                <a class="nav-item nav-link active" href="index.html">Home </span></a>
+                <a class="nav-item nav-link" href="index.html">Home </span></a>
                 <a class="nav-item nav-link" href="Winners.html">Winners</a>
-                <a class="nav-item nav-link" href="admin.html">Admin <span class="sr-only">(current)</a>
+                <a class="nav-item nav-link active" href="admin.html">Admin <span class="sr-only">(current)</a>
             </div>
         </div>
     </nav>
 
     <!-- login form -->
-    <div>
-        <form action="#" method="post">
+    <div class="wrapper">
+        <form action="adminpanel.html">
             <div class="container">
                 <label for="username" >username</label>
-                <input type="text" placeholder="enter username" name="username" aria-required="true">   
-
                 <label for="password">password</label>
-                <input type="password" placeholder="enter password" name="password" aria-required="true">
 
-                <button type="submit">login</button>
+                <div class="container">
+                <input id="username" class="login" type="text" placeholder="enter username" name="username" aria-required="true">   
+                <input id="password" class="login" type="password" placeholder="enter password" name="password" aria-required="true">
+                
+                <button type="submit" class="btn btn-dark">login</button>
             </div>
         </form>
     </div>
-
-
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
