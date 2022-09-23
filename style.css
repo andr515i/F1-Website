@@ -1,35 +1,66 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .admin {
-    float: right;
+  float: right;
 }
 .navbar-collapse {
-    flex-grow: 0;
+  flex-grow: 0;
 }
 
 .wrapper {
-        text-align: center;
-        padding: 10px;
+  text-align: center;
+  padding: 10px;
 }
 .login {
-    margin: 0.5em;
+  margin: 0.5em;
 }
 label {
-    background-color: #6c757d;
-    margin-right: 9em ;
+  background-color: #6c757d;
+  margin-right: 9em;
 }
 .container {
-    grid-column: 2;
+    display: grid;
 }
-
-a.nav-link , a.nav-brand{
-    /*  background-color: black; */
-    margin-right: 2em;
+a.nav-link,
+a.nav-brand {
+  /*  background-color: black; */
+  margin-right: 2em;
 }
 
 .btn-wrapper {
-    text-align: center;
+  text-align: center;
+}
+
+img[src="./car.png"] {
+  position: absolute;
+  left: 0em;
+  max-width: 7em;
+  opacity: 1;
+}
+/* ugliest design i have ever come up with, but ifi didnt the cars would overlap with the text */
+.center {
+  font-weight: bold;
+  text-align: right;
+  text-shadow: -2px -2px 0 rgb(0, 0, 0), 2px -2px 0 rgb(0, 0, 0),
+    -2px 2px 0 rgb(0, 0, 0), 2px 2px 0 rgb(0, 0, 0);
+}
+
+iframe {
+  /* position: absolute;  */
+}
+div p {
+  background-color: black;
+  left: 600em;
+  text-align: right;
+}
+
+#vid2 {
+  top: 400px;
+}
+
+#vid3 {
+  top: 740px;
 }
