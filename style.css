@@ -54,7 +54,7 @@ iframe {
 div p {
   background-color: black;
   left: 600em;
-  text-align: right;
+  text-align: center;
 }
 
 #vid2 {
@@ -63,4 +63,16 @@ div p {
 
 #vid3 {
   top: 740px;
+}
+
+.footer-wrapper {
+  text-align: center;
+  background-color: #6c757d;
+}
+footer {
+  width: 100%;
+  background-color: #6c757d;
+  position: fixed;
+  bottom: 0;
+  align-items: center;
 }
