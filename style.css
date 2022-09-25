@@ -3,42 +3,39 @@
   margin: 0;
 }
 
-.admin {
-  float: right;
-}
+
+/* makes the navigation bar centered */
 .navbar-collapse {
   flex-grow: 0;
 }
-
+/* used to center and style adminpage divs */
 .wrapper {
   text-align: center;
   padding: 10px;
 }
-.login {
-  margin: 0.5em;
-}
+
+/* used in admin login page, small styling. */
 label {
   background-color: #6c757d;
   margin-right: 9em;
+  margin: 0.5em;
 }
-.container {
-    display: grid;
-}
+
+/* gives the navbar more space between elements */
 a.nav-link,
 a.nav-brand {
   /*  background-color: black; */
   margin-right: 2em;
 }
-
+/* centers submit button to center of screen on adminpanel page */
 .btn-wrapper {
   text-align: center;
 }
-
+/* changes car.png images to be absolutely positioned to the left on home page. */
 img[src="./car.png"] {
   position: absolute;
   left: 0em;
   max-width: 7em;
-  opacity: 1;
 }
 /* ugliest design i have ever come up with, but ifi didnt the cars would overlap with the text */
 .center {
@@ -48,31 +45,42 @@ img[src="./car.png"] {
     -2px 2px 0 rgb(0, 0, 0), 2px 2px 0 rgb(0, 0, 0);
 }
 
-iframe {
-  /* position: absolute;  */
-}
-div p {
-  background-color: black;
-  left: 600em;
-  text-align: center;
-}
 
+/* align second video on videoes page */
 #vid2 {
   top: 400px;
 }
-
+/* aling third video on videoes page */
 #vid3 {
   top: 740px;
 }
-
+/* centers text and adds more background to footer */
 .footer-wrapper {
   text-align: center;
   background-color: #6c757d;
 }
+/* footer styling */
 footer {
   width: 100%;
   background-color: #6c757d;
   position: fixed;
   bottom: 0;
   align-items: center;
+}
+
+
+/*  dynamic scaling on videoes, keeps aspect ratio */
+.container {
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 */
+  position: relative;
+} 
+
+.container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
 }

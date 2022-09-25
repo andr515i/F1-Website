@@ -12,15 +12,15 @@
 </head>
 
 <body>
-    <!-- navbar on most screens it will just be a "burger menu", which for now works great responsive-wise-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-secondary justify-content-center">
-        <a class="navbar-brand" href="index.html">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+     <!-- navbar on most screens it will just be a "burger menu", which for now works great responsive-wise-->
+     <nav class="navbar navbar-expand-lg navbar-light bg-secondary justify-content-center"> <!-- this is practically a wrapper element -->
+        <a class="navbar-brand" href="index.html">Navbar</a> <!-- could replace this with a picture, but just to show its the navbar, i called it navbar, which  links to homepage-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" 
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span> <!--this is the burger menu button, which collapses and folds open with a smooth animation on small screens -->
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">  <!--wrapper class for content of the burger menu, while also content in the normal navbar-->
+            <div class="navbar-nav"> <!--wrapper element-->
                 <a class="nav-item nav-link" href="Videoes.html">Videoes</a>
                 <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" href="Winners.html">Winners</a>
@@ -30,7 +30,7 @@
     </nav>
 
 
-
+    <!--table for top10-->
     <table class="table table-dark">
         <thead>
             <tr>
@@ -102,9 +102,20 @@
             </tr>
         </tbody>
     </table>
+<!-- static footer on all pages that shows basic information -->
+    <footer>
+        <div class="footer-wrapper">
+          <p>zbc ringsted  -  formel1 - Andreas Madsen - email: andr515i@zbc.dk </p>
+        </div>
+      </footer>
 
-
+    <!-- my scripts, adminpage used to get info from table, and to change it -->
+    <script src="adminpage.js"></script>
+    <!--animation for the cars-->
     <script src="scripts.js"></script>
+
+
+<!-- bootstraps scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

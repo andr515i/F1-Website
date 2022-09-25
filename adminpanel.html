@@ -13,14 +13,14 @@
 
 <body>
     <!-- navbar on most screens it will just be a "burger menu", which for now works great responsive-wise-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-secondary justify-content-center">
-        <a class="navbar-brand" href="index.html">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary justify-content-center"> <!-- this is practically a wrapper element -->
+        <a class="navbar-brand" href="index.html">Navbar</a> <!-- could replace this with a picture, but just to show its the navbar, i called it navbar, which  links to homepage-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" 
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span> <!--this is the burger menu button, which collapses and folds open with a smooth animation on small screens -->
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">  <!--wrapper class for content of the burger menu, while also content in the normal navbar-->
+            <div class="navbar-nav"> <!--wrapper element-->
                 <a class="nav-item nav-link" href="Videoes.html">Videoes</a>
                 <a class="nav-item nav-link" href="index.html">Home </span></a>
                 <a class="nav-item nav-link" href="Winners.html">Winners</a>
@@ -29,7 +29,7 @@
         </div>
     </nav>
 
-    <!-- the most ugly design to change data... would never do this in real practice -->
+    <!-- here we assume the new data to be -->
     <form action="#">
 
         <div class="wrapper">
@@ -84,10 +84,22 @@
         </div>    
         <div class="btn-wrapper"><button type="submit" class="btn btn-dark" onclick="submit();">submit</button></div>
     </form>
-        
+    <!-- added this in to function as test, to show that the website cant be made with how it was originally thought out -->
+    <!-- we will never see the actual changed data in the  top10 table, but this shows that we do indeed change data-->
+    <p id="demo">test - changes innerHTML</p>
+    <button class="btn btn-dark" onclick="change()">test</button>
 
-    <script src="scripts.js"></script>
+<!-- static footer on all pages that shows basic information -->
+<footer>
+    <div class="footer-wrapper">
+      <p>zbc ringsted  -  formel1 - Andreas Madsen - email: andr515i@zbc.dk </p>
+    </div>
+  </footer>
 
+    <!-- my own javascript file -->
+    <script src="adminpage.js"></script>
+
+    <!-- bootstrap javascript files -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
